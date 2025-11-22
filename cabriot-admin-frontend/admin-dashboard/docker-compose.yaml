@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  cabriot-eat-frontend:
+    build: ../admin-dashboard
+    container_name: cabriot-eat-frontend-container
+    image: cabriot-eat-frontend-image
+    ports:
+      - "3000:3000"
+    stdin_open: true
+    tty: true
